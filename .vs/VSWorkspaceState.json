@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\dateAndDayOfWeek",
+    "\\dayFromBeginingOfTheYear",
     "\\DaysHoursMinutesInAMonth",
     "\\DaysHoursMinutesSeconds",
-    "\\leapYear"
+    "\\leapYear",
+    "\\monthCalender",
+    "\\yearCalender"
   ],
+  "SelectedNode": "\\dayFromBeginingOfTheYear\\dayFromBeginingOfTheYear.cpp",
   "PreviewInSolutionExplorer": false
 }

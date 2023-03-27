@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CheckIfTheLastDayAndLastMonthOfThYear",
+    "\\CheckIfTheTwoDatesAreEquals",
     "\\dateAndDayOfWeek",
     "\\dayFromBeginingOfTheYear",
     "\\DaysHoursMinutesInAMonth",
@@ -9,6 +11,5 @@
     "\\monthCalender",
     "\\yearCalender"
   ],
-  "SelectedNode": "\\dayFromBeginingOfTheYear\\dayFromBeginingOfTheYear.cpp",
   "PreviewInSolutionExplorer": false
 }

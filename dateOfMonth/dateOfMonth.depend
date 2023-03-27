@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1679752081 source:d:\programing\c++\algorithm4\dateofmonth\main.cpp
+	<iostream>
+	<string>
+	<iomanip>
+

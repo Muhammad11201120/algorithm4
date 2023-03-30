@@ -29,7 +29,7 @@ short readDay() {
 	return d;
 }
 
-bool checkDate( stDate& DateOne , stDate& DateTwo ) {
+bool checkIfFirstDateGreaterThanSecondDate( stDate& DateOne , stDate& DateTwo ) {
 	return  ( DateOne.year > DateTwo.year ) ? true : ( ( DateOne.year == DateTwo.year ) ? ( DateOne.month > DateTwo.month ? true : ( DateOne.month == DateTwo.month ? DateOne.day > DateTwo.day : false ) ) : false );
 }
 int main()
@@ -43,7 +43,7 @@ int main()
 	DateTwo.month = readMonth();
 	DateTwo.year = readYear();
 
-	if ( checkDate( DateOne , DateTwo ) )
+	if ( checkIfFirstDateGreaterThanSecondDate( DateOne , DateTwo ) )
 	{
 		cout << "Yes Date One Is Greater Than Date Two.." << endl;
 	}

@@ -24,6 +24,36 @@ short getYear() {
 	cin >> year;
 	return year;
 }
+short getDaysToAdd() {
+	short d = 0;
+	cout << "Enter Days To Add? ";
+	cin >> d;
+	return d;
+}
+short getWeeksToAdd() {
+	short w = 0;
+	cout << "Enter A Weeks To Add? ";
+	cin >> w;
+	return w;
+}
+short getMonthsToADD() {
+	short m = 0;
+	cout << "Enter A Months To Add? ";
+	cin >> m;
+	return m;
+}
+short getYearsToAdd() {
+	short y = 0;
+	cout << "Enter A Years To Add? ";
+	cin >> y;
+	return y;
+}
+short getDecadesToAdd() {
+	short d = 0;
+	cout << "Enter A Decades To Add? ";
+	cin >> d;
+	return d;
+}
 bool isALeapYear( short year ) {
 	return ( year % 4 == 0 && year % 100 == 0 ) || ( year || 400 == 0 );
 }
@@ -57,26 +87,9 @@ stDate increaseDateByOneDay( stDate& Date ) {
 	return Date;
 }
 stDate increaseDateByXDays( stDate& Date , short numberOfDaysToAdd ) {
-	while ( numberOfDaysToAdd > 0 )
+	for ( short i = 0; i < numberOfDaysToAdd; i++ )
 	{
-		if ( checkIfTheLastDayInTheMonth( Date ) )
-		{
-			if ( checkIfTheLastMonthInTheYear( Date ) ) {
-				Date.day = 1;
-				Date.month = 1;
-				Date.year++;
-			}
-			else
-			{
-				Date.day = 1;
-				Date.month++;
-			}
-		}
-		else {
-			Date.day++;
-		}
-
-		numberOfDaysToAdd--;
+		Date = increaseDateByOneDay( Date );
 	}
 	return Date;
 }
@@ -95,52 +108,27 @@ stDate increaseDateByXWeeks( stDate& Date , short numberOfWeeksToAdd ) {
 	return Date;
 }
 stDate increaseDateByOneMonth( stDate& Date ) {
-	short numberOfDaysToAdd = 30;
-	while ( numberOfDaysToAdd > 0 )
+	short numberOfDaysToAdd = numberOfDaysInAmonth( Date.year , Date.month );
+	if ( Date.month == 12 )
 	{
-		if ( checkIfTheLastDayInTheMonth( Date ) )
-		{
-			if ( checkIfTheLastMonthInTheYear( Date ) ) {
-				Date.day = 1;
-				Date.month = 1;
-				Date.year++;
-			}
-			else
-			{
-				Date.day = 1;
-				Date.month++;
-			}
-		}
-		else {
-			Date.day++;
-		}
-
-		numberOfDaysToAdd--;
+		Date.month = 1;
+		Date.year++;
+	}
+	else
+	{
+		Date.month++;
+	}
+	short numberOfDaysInCurrentMonth = numberOfDaysInAmonth( Date.month , Date.year );
+	if ( Date.day > numberOfDaysInCurrentMonth )
+	{
+		Date.day = numberOfDaysInCurrentMonth;
 	}
 	return Date;
 }
 stDate increaseDateByXmonths( stDate& Date , short numberOfMonthsToAdd ) {
-	numberOfMonthsToAdd = numberOfMonthsToAdd * 30;
-	while ( numberOfMonthsToAdd > 0 )
+	for ( short i = 0; i < numberOfMonthsToAdd; i++ )
 	{
-		if ( checkIfTheLastDayInTheMonth( Date ) )
-		{
-			if ( checkIfTheLastMonthInTheYear( Date ) )
-			{
-				Date.day = 1;
-				Date.month = 1;
-				Date.year++;
-			}
-			else {
-				Date.day = 1;
-				Date.month++;
-			}
-		}
-		else
-		{
-			Date.day++;
-		}
-		numberOfMonthsToAdd--;
+		Date = increaseDateByOneMonth( Date );
 	}
 	return Date;
 }
@@ -166,7 +154,7 @@ stDate increaseDateByOneDecade( stDate& Date ) {
 	}
 	return Date;
 }
-stDate increaseDateByXDecades( stDate& Date ,short numberOfYearsToAdd ) {
+stDate increaseDateByXDecades( stDate& Date , short numberOfYearsToAdd ) {
 	for ( short i = 0; i < numberOfYearsToAdd; i++ )
 	{
 		Date = increaseDateByOneDecade( Date );
@@ -197,11 +185,11 @@ int main() {
 	Date.month = getMonth();
 	Date.year = getYear();
 
-	short daysToAdd = getDay();
-	short weeksToAdd = getDay();
-	short monthsToAdd = getDay();
-	short yearsToadd = getDay();
-	short decadesToadd = getDay();
+	short daysToAdd = getDaysToAdd();
+	short weeksToAdd = getWeeksToAdd();
+	short monthsToAdd = getMonthsToADD();
+	short yearsToadd = getYearsToAdd();
+	short decadesToadd = getDecadesToAdd();
 
 
 	Date = increaseDateByOneDay( Date );

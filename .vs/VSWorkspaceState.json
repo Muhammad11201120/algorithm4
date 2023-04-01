@@ -1,7 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CheckIfTheTwoDatesAreEquals",
+    "\\decrementDate",
     "\\differentBetweenTwoDatesNigativeAndPositive",
     "\\differentBetweenTwoDatesNigativeAndPositiveNewWay",
     "\\getAgeByDasys",
@@ -11,6 +11,6 @@
     "\\monthCalender",
     "\\yearCalender"
   ],
-  "SelectedNode": "\\IncrementDate\\IncrementDate.cpp",
+  "SelectedNode": "\\decrementDate\\decrementDate.cpp",
   "PreviewInSolutionExplorer": false
 }

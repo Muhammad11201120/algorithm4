@@ -29,7 +29,7 @@ short readDay() {
 	return d;
 }
 
-bool checkTwoDates( stDate& DateOne , stDate& DateTwo ) {
+bool checkTwoDatesAreEqual( stDate& DateOne , stDate& DateTwo ) {
 	return  ( DateOne.year == DateTwo.year ) && ( DateOne.month == DateTwo.month ) && ( DateOne.day == DateTwo.day );
 }
 int main()
@@ -43,7 +43,7 @@ int main()
 	DateTwo.month = readMonth();
 	DateTwo.year = readYear();
 
-	if ( checkTwoDates( DateOne , DateTwo ) )
+	if ( checkTwoDatesAreEqual( DateOne , DateTwo ) )
 	{
 		cout << "Yes They are Equals.." << endl;
 	}

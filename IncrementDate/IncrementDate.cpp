@@ -6,7 +6,7 @@ struct stDate
 	short month = 0;
 	short day = 0;
 };
-short getDay() {
+short readDay() {
 	short day = 0;
 	cout << "Enter A Day? ";
 	cin >> day;
@@ -181,7 +181,7 @@ stDate increaseDatByOneMillennium( stDate& Date ) {
 }
 int main() {
 	stDate Date;
-	Date.day = getDay();
+	Date.day = readDay();
 	Date.month = getMonth();
 	Date.year = getYear();
 

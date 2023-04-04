@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\decrementDate",
+    "\\CheckIfDateOneIsGreaterThanDateTwoOrNot",
+    "\\CheckIfTheTwoDatesAreEquals",
+    "\\compareDatesFunction",
+    "\\dateAndDayOfWeek",
     "\\differentBetweenTwoDatesNigativeAndPositive",
-    "\\differentBetweenTwoDatesNigativeAndPositiveNewWay",
     "\\getAgeByDasys",
-    "\\increamentDateByOneDay",
     "\\IncrementDate",
-    "\\leapYear",
-    "\\monthCalender",
-    "\\yearCalender"
+    "\\moreDateProblems",
+    "\\vacationDays"
   ],
-  "SelectedNode": "\\decrementDate\\decrementDate.cpp",
+  "SelectedNode": "\\differentBetweenTwoDatesNigativeAndPositive\\differentBetweenTwoDatesNigativeAndPositive.cpp",
   "PreviewInSolutionExplorer": false
 }

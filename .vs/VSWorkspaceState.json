@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CheckIfDateOneIsGreaterThanDateTwoOrNot",
-    "\\CheckIfTheTwoDatesAreEquals",
+    "\\checkIfGivinDateWithenPeriod",
+    "\\checkIfTwoDatesAreOverlapsOrNot",
     "\\compareDatesFunction",
-    "\\dateAndDayOfWeek",
+    "\\countOverlapDays",
+    "\\differentBetweenTwoDates",
     "\\differentBetweenTwoDatesNigativeAndPositive",
-    "\\getAgeByDasys",
-    "\\IncrementDate",
-    "\\moreDateProblems",
+    "\\periodDateLength",
     "\\vacationDays"
   ],
-  "SelectedNode": "\\differentBetweenTwoDatesNigativeAndPositive\\differentBetweenTwoDatesNigativeAndPositive.cpp",
+  "SelectedNode": "\\countOverlapDays\\countOverlapDays.cpp",
   "PreviewInSolutionExplorer": false
 }
